@@ -1,0 +1,23 @@
+Hello, in this workshop number 7 we learn new topics such as: 
+1. Inherit a derived class from a base class.
+2.Shadow a base class member function with a derived class member function.
+3.Access a shadowed member function that is defined in a base class
+4. Utilize custom input/output operators with these classes.
+5. To describe to your instructor what you have learned in completing this workshop and the project milestones.
+1. In this workshop, we had 2 modules in which we create to classes Car and Vehicle. Car is a kind of derived class and Vehicle is our base class.
+The Car takes all attributes, like data members and member functions. 
+class Car: public Vehicle{ 
+-here we show what our Car will inherit from our Vehicle class. 
+ Car::Car(const char* type,int year,int speed,int seats):Vehicle( speed, seats){/
+-This was our constructor in a Car part and we use parameters from our Base(Vehicle) class after : 
+2. Shadowing how we already know is when a derived function masks the base function with the same name. In our example, it was a display function.std::ostream& Vehicle::display(std::ostream& os) const{
+But we know that if object calling display function it will give an object's display function rather than the compound function.
+3.To access a shadowed member function we suppose to use 
+compound: display(); in our lab Vehicle::input(in);
+4. In utilizing custom input/output we use 
+istream& Car::input(istream& in){
+ostream& Car::display(ostream& os) const{
+Display function we use in the last workshop too. So I will talk more about input there I stuck on assigning variables like  m_regYear,m_carType[MAX_CHAR] with users' values.  I.E
+ strcpy(this->m_carType, m_carType);
+5. I find a lot of new information from input functions and  I actually had an issue when I tried to access a variable from another class but they were private. And I repeat the display function. I find what we can't use nullptr(we need to use ['\0']) for our array of string... and from slides, I got new information about "Protected" members of the class.
+

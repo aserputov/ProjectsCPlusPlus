@@ -1,0 +1,7 @@
+Write exactly which part of the code of the workshops or the assignment are given to you as help and who gave it to you or which source you received it from.
+
+You need to mention the workshop name or assignment name and also mention the file name and the parts in which you received the code for help.
+
+Finally add your name and student number as signature.
+
+Anatoliy Serputov 167389188 (I get help from my friend Andrei Batomunkuev)(I did lab_part all by my own self, but in diy part  I get stacked on part of allocating and deallocating memory)(I almost was done, but after find a lot of mistakes in matrix with memory leaks)

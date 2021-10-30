@@ -1,0 +1,11 @@
+Write exactly which part of the code of the workshops or the assignment are given to you as help and who gave it to you or which source you received it from.
+
+You need to mention the workshop name or assignment name and also mention the file name and the parts in which you received the code for help.
+
+I just get small help from Andrei Batomonkuev with operator
+operator+= ,with creating new array. 
+
+
+Finally add your name and student number as signature.
+
+Anatoliy Serputov 167389188 

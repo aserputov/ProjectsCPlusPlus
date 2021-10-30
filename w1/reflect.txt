@@ -1,0 +1,4 @@
+Hello,my name is Serputov Anatoliy in this lab I learned a lot of new thing after the programing using c . I had learn new commandscin and cout. 
+Also the most importan were namespaces. Right now i start understanding how they works and how we can create them. 
+I was there wonderded then knew what std namespace is included,so basically if I will work in visual studio company, 
+I can create my own namespace and include it(lol). And also learned a lot of stuff about modules lie dividing program into different files.

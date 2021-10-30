@@ -1,0 +1,14 @@
+In line number 16 of your output:
+The output should be:
+Cargo: Boxes Weight: 40.44
+                     ^
+But your output is: 
+Cargo: Boxes Weight: -5000.00
+                     ^
+
+Unmatched character details:
+The character in column 22 is supposed to be:
+  [4] ASCII code(52)
+but you printed
+  [-] ASCII code(45)
+

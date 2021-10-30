@@ -1,0 +1,7 @@
+Hello, Dear professor, in this lab of "Constructors" I have learned :
+-how to use constructors, overload constructors/destructors
+-these /other keywords 
+-empty states 
+-repeat classes with objects and start understanding 
+-allocating/deallocating memory. 
+We use the constructor of our class name Saiyan{} and refer to our class ::Saiyan, after we created a new constructor with different parameters, which means constructor overloading and ~(name of our class(Sayian))destructor, which can't receive any parameters. In my member function SetEmpty, I set empty states for my private part. We always use member functions to get access to our private variables. And we used 3  types of functions(Modify and Query and Special(destruction) )And as always I stuck on allocating and deallocating memory in my set function, but on this lab, I start understanding much better. "This" is an important feature that helps us to use the current object. Other can give us precious object. These keywords simplify our work with oop. And right now I find the way how to define my variables with different statements, like int a <2000. 

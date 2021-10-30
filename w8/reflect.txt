@@ -1,0 +1,27 @@
+Hello, in this workshop number 8 we learn new topics such as:
+• define a pure virtual function 
+• code an abstract base class 
+• implement behavior declared in a pure virtual function 
+• explain the difference between an abstract base class and a concrete class 
+• describe what you have learned in completing this workshop
+-----
+1) In our lab number 8, we use module Employee. There we declare our virtual functions: 
+virtual void setSalary(double) = 0;
+virtual void bonus() = 0;
+virtual bool workHours() = 0;
+virtual ostream& display(std::ostream& os) const = 0;
+virtual ~Employee() {};   - virtual destructor 
+As we already know by assignment to 0 our functions we make them -pure
+We don't need any implementation. Their purpose is just to expose a sort of a generic entry point or portal. In our program, the purpose is a kind of connection between Doctor&Engiineer.  
+2)The same as virtual functions, we have ABC(abstract base class ) Employee in Employee.h module. 
+class Employee {
+  public:
+    virtual void setSalary(double) = 0  ; ....
+3)It's a member function that is pure. It refers to a function that lacks any implementation details. Just declaration is present. It needs to be virtual.
+Exist as a name/identifier to be referenced, but won't have any implementation. And as I said before by assignment to 0 makes it - pure.
+4)This class Employee consists of more than one virtual function. These functions inherited from derived classes like Doctor and Engineer in our other modules. We can't create an object from this class. It doesn't contain any data members declared inside of it. It doesn't provide any implementation. All it comprises of is those pure virtual functions. Our concrete can do it on the opposite side.We can create objects and we can contain data members. 
+5)In this workshop, I of cource learned on practic about virtual pure functions& ABS. While doing this workshop I received an error 
+like:
+:vtable for sddds Employee
+:typeinfo for sdds Employee
+I find the solution, what I need to add a virtual destructor with {} and destructors for other classes(derived).

@@ -1,0 +1,40 @@
+Hello, in this workshop №9 we learned topics such as:
+• To code a templated class
+• To specify the type to implement in a call to a templated class
+• To specify a constant numeric parameter to a templated class
+• To describe to your instructor what you have learned in completing this workshop
+1) template <class myType>
+myType GetMax (myType a, myType b)  - in this example we have type myType as its template parameter. This template parameter represents a type that has not yet been specified, but that can be used in the template function as if it were a regular type.  
+How we already know from slides, this is the way of coding templated class:
+template <class T, int N>
+class Array {
+	T a[N];
+public:
+	T& operator[](int i) { return a[i];}
+}
+In our workshop №9 I use structure: 
+template<typename T>
+  class NumbersBox{
+    T* b_items; 
+- a dynamically allocated array of generic type
+int main() {
+ 	Array<int, 5> a; - this is out the object of class
+We use     NumbersBox<T> in our workshops.
+2-3)Just like an example, I use this function
+from oop244 website there we have an explanation, how we can call the function with different types  
+template<typename T>
+ void swap(T& a, T& b) { - we use our template type T
+     T c;
+     c = a;
+     a = b;
+     b = c;
+ }
+ int main() { 
+     double a = 2.3;
+     double b = 4.5;
+     long   d = 78;
+     long   e = 567;
+     swap(a, b);  - double   (calling function void swap(T& a, T& b))
+     swap(d, e)	- int  (calling function void swap(T& a, T& b))
+4)I learned a lot of about template classes and how to use it when I calling functions.How basically use <template> classes 
+

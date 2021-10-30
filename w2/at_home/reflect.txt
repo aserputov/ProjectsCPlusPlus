@@ -1,0 +1,8 @@
+In this lab I found a lot of practical work after terminology on lectures. If have functions same names but different parameters we can call this overloading functions and how pointers different from & references, but the most important and hard part was allocating dynamic memory and deallocating memory. I found it's important and useful for future programs. Labs helps us to practice our knowledges;
+How does dynamic memory differ from static memory?
+Static memory is memory which u give for program before  debugging and dynamic you give if for example memory depends on choices of user. 
+2. What errors if any did you encounter when incorporating dynamic memory?
+Spend much time with writing functions to allocate and deallocate memory.
+3. For the overloaded functions used in this workshop, how did they differ? 
+void gifting is function overloading, using one name but different parameters.
+

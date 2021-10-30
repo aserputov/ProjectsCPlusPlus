@@ -1,0 +1,23 @@
+Hello, in this workshop 8 we learn a lot of new topics such as: 
+1)Implementation of copy constructor and copy assignment operator
+2)Managing a class with dynamic resources
+3)Using existing objects to create new ones and 
+4)Assigning values to existing objects based on other existing ones.
+5)Implement custom input/output operators.
+
+1. Here we create constructor and assignment operator:
+Basket:: Basket (const Basket& src )(our constructor)
+Basket& Basket::operator=(const Basket& src) (our operator)
+The copy constructor is contained logic for copying from a source object to a newly created object of the same type and copy assignment operator contains logic for copying data from an existing object to an existing object.
+We create this because we want to use deep copying, by default we always have shallow copying constructor. The program creates it for us.
+2. In our class, we have to dynamically allocate memory for char variable name m_fruitName.We need to find the way how to copy dynamically allocated m_fruitName to a new object. And avoid memory leak after.
+3. In our operator we copy our object to newly created like this 
+m_qty = src.m_qty;
+m_price = src.m_price;
+And we need not forget about m_fruitName which is allocated dynamically. So we copy it in a different way
+this->setName(src.m_fruitName);
+4. We created a new object and after comparing it with an old  object in our function bool Basket::operator==(const Basket& src){
+by getting true or false for our if statement 
+5. At first, the main functionality is in the <iostream> library where we can find our namespace std which contains cin and cout objects. The cout is ostream and istream is cin. Therefore we use custom input and output operators in our function display 
+ostream& Basket::display(std::ostream& os) const { 
+os<<"Basket Details"<< std::endl;(we use std:: to show how we use a namespace to display without using cout )

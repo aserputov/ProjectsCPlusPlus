@@ -1,0 +1,30 @@
+class BoxN{
+	char name[max char];	
+	INT FFF;
+	ENGINE arr;
+
+Box::Box(const Box& src){
+	if(src.name != nullptr){
+	ar = new pl[size];
+	strcpy(name,src.name);
+	}else{
+	name = nullptr;
+	}
+	fff= src.fff;
+	for(int i=0;i<sizeof(src.arr);i++){
+		arr[i]=src.arr[i];
+	}
+Box& Box::operator=(const Box& src){
+	delete[] name;
+ 	if(src.name != nullptr){
+           ar = new pla
+           strcpy(name,src.name);
+          }else{ 
+          name = nullptr;
+          }
+          fff= src.fff;
+          for(int i=0;i<sizeof(src.arr);i++){
+                  arr[i]=src.arr[i]; 
+}
+
+
